@@ -1,7 +1,8 @@
-#Photographer
+# Photographer
+
 Photographer is a website template designed for photographers to showcase their portfolio and services.
 
-##Getting Started
+## Getting Started
 To get started with Photographer, simply clone the repository to your local machine:
 
 bash
@@ -21,8 +22,8 @@ Finally, start the development server with the following command:
 npm run dev
 ```
 
-##Contributing
+## Contributing
 If you find any bugs or issues with the Photographer template, please feel free to submit a pull request or open an issue. Contributions are welcome!
 
-##License
+## License
 The Photographer template is licensed under the MIT License.
