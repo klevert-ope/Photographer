@@ -26,6 +26,16 @@ const { title } = Astro.props;
 		<meta name="theme-color" content="#eaf9b1">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<style is:global>
+			@font-face {
+			  font-family: 'AzeretMono';
+			  src: url('/fonts/AzeretMono-Variable.woff2') format('woff2');
+			}
+			@font-face {
+			  font-family: 'Comic';
+			  src: url('/fonts/Comico-Regular.woff2') format('woff2');
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
@@ -40,14 +50,6 @@ const { title } = Astro.props;
 
   
 <style is:global>
-    @font-face {
-	  font-family: 'AzeretMono';
-	  src: url('/fonts/AzeretMono-Variable.woff2') format('woff2');
-	}
-	@font-face {
-	  font-family: 'Comic';
-	  src: url('/fonts/Comico-Regular.woff2') format('woff2');
-	}
 	body{
 		margin: 0;
 		padding: 0;
