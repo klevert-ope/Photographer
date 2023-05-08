@@ -29,7 +29,7 @@ gsap.set(elements, { y: 10});
 // reveal elements when they come into view
 elements.forEach(el => {
   gsap.to(el, {
-    y: -20,
+    y: -10,
     duration: 1.5,
     ease: "elastic.out(1, 0.3)",
     scrollTrigger: {
