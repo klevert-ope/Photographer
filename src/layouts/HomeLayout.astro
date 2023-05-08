@@ -1,7 +1,6 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import About from "../components/About.astro";
 
 
 
@@ -33,10 +32,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Header />
-		<slot/>
-		<section class=" mb-60 mt-20">
-			<About />
-		</section>	
+		<slot/>	
 		<Footer />
 	</body>
 </html>
@@ -60,6 +56,8 @@ const { title } = Astro.props;
 		src: url('/fonts/Comico-Regular.woff2') format('woff2');
 	}
 </style>
+
+<script src="/src/js/motion.js"></script>
 
 
 
