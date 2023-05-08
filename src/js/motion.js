@@ -34,7 +34,7 @@ elements.forEach(el => {
     ease: "elastic.out(1, 0.3)",
     scrollTrigger: {
       trigger: el,
-      start: 'top 80%',
+      start: 'top 50%',
     },
   });
 });
