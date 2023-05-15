@@ -18,7 +18,7 @@ gsap.from(".social", {opacity: 0, x: -10, duration: 4.8, ease: 'power2'});
 gsap.from(".contact", {opacity: 0, x: -10, duration: 4.8, ease: 'power2'});
 
 //showcase motion
-gsap.from(".reveal", {opacity: 0, x: -80, duration: 5.8, ease: 'power2'});
+gsap.from(".reveal", {opacity: 0, y: -10, duration: 5.8, ease: 'power2'});
 
 // select elements to reveal
 const elements = document.querySelectorAll('.revealscroll');
