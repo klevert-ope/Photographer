@@ -36,7 +36,7 @@ elements.forEach((el) => {
   gsap.to(el, {
     y: -10,
     duration: 1.5,
-    ease: "elastic.out(1, 0.3)",
+    ease: "power4",
     scrollTrigger: {
       trigger: el,
       start: "top 80%",

@@ -1,8 +1,10 @@
 <div id="showcase">
-  <div id="layout">
+  <div id="layout" class="mx-1 my-20">
     <div id="apec">
       <h1 class="reveal font-Comic font-bold text-3xl mb-3">Apec</h1>
-      <div class="reveal gallery">
+      <div
+        class="reveal grid gap-5 lg:grid-auto-fit-[250px] md:grid-auto-fit-[210px] max-sm:grid-auto-fit-[140px]"
+      >
         <img src="/images/G1 (1).jpg" alt="" />
         <img src="/images/G1 (2).jpg" alt="" />
         <img src="/images/G1 (3).jpg" alt="" />
@@ -15,7 +17,9 @@
       <h1 class="reveal revealscroll font-Comic font-bold text-3xl mt-20 mb-3">
         Stora
       </h1>
-      <div class="reveal revealscroll gallery">
+      <div
+        class="reveal revealscroll grid gap-5 lg:grid-auto-fit-[250px] md:grid-auto-fit-[200px] max-sm:grid-auto-fit-[140px]"
+      >
         <img src="/images/G2 (1).jpg" alt="" />
         <img src="/images/G2 (2).jpg" alt="" />
         <img src="/images/G2 (3).jpg" alt="" />
@@ -25,7 +29,9 @@
       <h1 class="reveal revealscroll font-Comic font-bold text-3xl mt-20 mb-3">
         Zomba
       </h1>
-      <div class="reveal revealscroll gallery">
+      <div
+        class="reveal revealscroll grid gap-5 lg:grid-auto-fit-[250px] md:grid-auto-fit-[200px] max-sm:grid-auto-fit-[140px]"
+      >
         <img src="/images/G4 (1).jpg" alt="" />
         <img src="/images/G4 (2).jpg" alt="" />
         <img src="/images/G4 (3).jpg" alt="" />
@@ -45,7 +51,9 @@
       <h1 class="reveal revealscroll font-Comic font-bold text-3xl mt-20 mb-3">
         Monza
       </h1>
-      <div class="reveal revealscroll gallery">
+      <div
+        class="reveal revealscroll grid gap-5 lg:grid-auto-fit-[250px] md:grid-auto-fit-[200px] max-sm:grid-auto-fit-[140px]"
+      >
         <img src="/images/G5 (1).jpg" alt="" />
         <img src="/images/G5 (2).jpg" alt="" />
         <img src="/images/G5 (3).jpg" alt="" />
@@ -60,7 +68,9 @@
       <h1 class="reveal revealscroll font-Comic font-bold text-3xl mt-20">
         Weldok
       </h1>
-      <div class="reveal revealscroll gallery">
+      <div
+        class="reveal revealscroll grid gap-5 lg:grid-auto-fit-[250px] md:grid-auto-fit-[200px] max-sm:grid-auto-fit-[140px]"
+      >
         <img src="/images/G6 (1).jpg" alt="" />
         <img src="/images/G6 (2).jpg" alt="" />
         <img src="/images/G6 (3).jpg" alt="" />
@@ -71,41 +81,3 @@
     </div>
   </div>
 </div>
-
-<style>
-  #showcase {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    margin: 0 auto;
-    padding: 0%;
-    overflow: hidden;
-    gap: 10px;
-    margin-top: 100px;
-    scroll-behavior: smooth;
-    scroll-snap-type: proximity;
-  }
-  #layout {
-    grid-column: 3/8;
-    margin: 0% auto;
-    padding: 0%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 10px;
-  }
-
-  .gallery img {
-    width: 100%;
-    height: auto;
-  }
-  @media (max-width: 768px) {
-    #showcase {
-      display: block;
-      margin-left: 1.5%;
-      margin-right: 1.5%;
-    }
-  }
-</style>

@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-	theme: {
-		extend: {
-			fontFamily: {
-				'AzeretMono': ['AzeretMono', 'sans-serif'],
-				'Comic': ['Comic', 'sans-serif'],
-			},
-		},
-	},
-	plugins: [],
-}
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        AzeretMono: ["AzeretMono", "sans-serif"],
+        Comic: ["Comic", "sans-serif"],
+      },
+    },
+  },
+  plugins: [require("@shrutibalasa/tailwind-grid-auto-fit")],
+};
