@@ -9,5 +9,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@shrutibalasa/tailwind-grid-auto-fit")],
+  plugins: [],
 };
