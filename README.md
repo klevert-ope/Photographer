@@ -1,10 +1,10 @@
 # Photographer
 
-Photographer is a portfolio page that showcases a collection of images in a grid layout. This project utilizes Astro.js to build the template and demonstrates the usage of the Mansory grid for displaying both vertical and horizontal images. Additionally, Photographer incorporates custom JavaScript indicators to provide visual cues for scrolling and to indicate the user's position on the page. To enhance the overall user experience with captivating animations, Gsap (GreenSock Animation Platform) is employed.
+Photographer is a portfolio page that showcases a collection of images in a grid layout. This project utilizes Astro.js to build the template and demonstrates the usage of the Masonry grid for displaying both vertical and horizontal images. Additionally, Photographer incorporates custom JavaScript indicators to provide visual cues for scrolling and to indicate the user's position on the page. To enhance the overall user experience with captivating animations, Gsap (GreenSock Animation Platform) is employed.
 
 ## Features
 
-- Grid Layout with Mansory: Photographer employs the Mansory grid layout to present a visually appealing collection of images. The Mansory grid system allows for flexible arrangement of both vertical and horizontal images, creating an aesthetic and balanced portfolio presentation.
+- Grid Layout with Masonry: Photographer employs the Mansory grid layout to present a visually appealing collection of images. The Masonry grid system allows for flexible arrangement of both vertical and horizontal images, creating an aesthetic and balanced portfolio presentation.
 
 - Astro.js: The template is built using Astro.js, a modern static site generator that enables the combination of various technologies and frameworks to create performant and scalable websites. Astro.js facilitates server-side rendering and provides a seamless development experience.
 
