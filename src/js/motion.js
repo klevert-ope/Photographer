@@ -12,18 +12,18 @@ gsap.registerPlugin(
 );
 
 //header motion
-gsap.from(".name", { opacity: 0, y: -10, duration: 4, ease: "power2" });
-gsap.from(".tag", { opacity: 0, x: -10, duration: 4.5, ease: "power2" });
-gsap.from(".nav", { opacity: 0, x: 10, duration: 4.5, ease: "power2" });
+gsap.from(".name", { opacity: 0, y: -10, duration: 4, ease: "power4" });
+gsap.from(".tag", { opacity: 0, x: -10, duration: 4.5, ease: "power4" });
+gsap.from(".nav", { opacity: 0, x: 10, duration: 4.5, ease: "power4" });
 
 //footer motion
-gsap.from(".symbol", { opacity: 0, y: 10, duration: 3, ease: "power2" });
-gsap.from(".brandmotto", { opacity: 0, x: -10, duration: 3.5, ease: "power2" });
-gsap.from(".social", { opacity: 0, x: -10, duration: 4.8, ease: "power2" });
-gsap.from(".contact", { opacity: 0, x: -10, duration: 4.8, ease: "power2" });
+gsap.from(".symbol", { opacity: 0, y: 10, duration: 3, ease: "power4" });
+gsap.from(".brandmotto", { opacity: 0, x: -10, duration: 3.5, ease: "power4" });
+gsap.from(".social", { opacity: 0, x: -10, duration: 4.8, ease: "power4" });
+gsap.from(".contact", { opacity: 0, x: -10, duration: 4.8, ease: "power4" });
 
 //showcase motion
-gsap.from(".reveal", { opacity: 0, y: -10, duration: 5.8, ease: "power2" });
+gsap.from(".reveal", { opacity: 0, y: -10, duration: 5.8, ease: "power4" });
 
 // select elements to reveal
 const elements = document.querySelectorAll(".revealscroll");
