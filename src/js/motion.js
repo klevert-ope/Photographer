@@ -12,34 +12,46 @@ gsap.registerPlugin(
 );
 
 //header motion
-gsap.from(".name", { opacity: 0, y: -10, duration: 4, ease: "power4" });
-gsap.from(".tag", { opacity: 0, x: -10, duration: 4.5, ease: "power4" });
-gsap.from(".nav", { opacity: 0, x: 10, duration: 4.5, ease: "power4" });
-
-//footer motion
-gsap.from(".symbol", { opacity: 0, y: 10, duration: 3, ease: "power4" });
-gsap.from(".brandmotto", { opacity: 0, x: -10, duration: 3.5, ease: "power4" });
-gsap.from(".social", { opacity: 0, x: -10, duration: 4.8, ease: "power4" });
-gsap.from(".contact", { opacity: 0, x: -10, duration: 4.8, ease: "power4" });
+gsap.fromTo(
+  ".name",
+  { opacity: 0, y: -10 },
+  { opacity: 1, y: 0, duration: 4, ease: "power2" }
+);
+gsap.fromTo(
+  ".tag",
+  { opacity: 0, x: -10 },
+  { opacity: 1, x: 0, duration: 4.5, ease: "power2" }
+);
+gsap.fromTo(
+  ".nav",
+  { opacity: 0, x: 10 },
+  { opacity: 1, x: 0, duration: 4.5, ease: "power2" }
+);
 
 //showcase motion
-gsap.from(".reveal", { opacity: 0, y: -10, duration: 5.8, ease: "power4" });
+gsap.fromTo(
+  ".reveal",
+  { opacity: 0, y: -50 },
+  { opacity: 1, y: 0, duration: 4.5, ease: "power2" }
+);
 
 // select elements to reveal
 const elements = document.querySelectorAll(".revealscroll");
 
-// set initial y position below viewport
-gsap.set(elements, { y: 10 });
-
 // reveal elements when they come into view
 elements.forEach((el) => {
-  gsap.to(el, {
-    y: -10,
-    duration: 1.5,
-    ease: "power4",
-    scrollTrigger: {
-      trigger: el,
-      start: "top 80%",
-    },
-  });
+  gsap.fromTo(
+    el,
+    { opacity: 0, y: 80 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 4.5,
+      ease: "circ.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 95%",
+      },
+    }
+  );
 });

@@ -48,12 +48,33 @@ const { title } = Astro.props;
 
 <style is:global>
   body {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    transition: all 0.3s ease;
     background-color: #eaf9b1;
   }
+  /* Hide the scrollbar for modern browsers */
+  ::-webkit-scrollbar {
+    width: 0rem; /* Adjust the width as needed */
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  /* Hide the scrollbar for Firefox */
+  /* Note: This is necessary as Firefox uses a different scrollbar style */
+  html {
+    scrollbar-width: none;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0rem; /* Adjust the width as needed */
+    background-color: transparent;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
   @font-face {
     font-family: "AzeretMono";
     src: url("/fonts/AzeretMono-Variable.woff2") format("woff2");
