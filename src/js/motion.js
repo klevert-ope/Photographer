@@ -31,8 +31,8 @@ gsap.fromTo(
 //showcase motion
 gsap.fromTo(
   ".reveal",
-  { opacity: 0, y: -50 },
-  { opacity: 1, y: 0, duration: 4.5, ease: "power2" }
+  { opacity: 0 },
+  { opacity: 1, duration: 4.5, ease: "power2" }
 );
 
 gsap.fromTo(".scroll-down", { opacity: 0 }, { opacity: 1, ease: "power2" });
