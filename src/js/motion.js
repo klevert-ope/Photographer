@@ -35,6 +35,8 @@ gsap.fromTo(
   { opacity: 1, y: 0, duration: 4.5, ease: "power2" }
 );
 
+gsap.fromTo(".scroll-down", { opacity: 0 }, { opacity: 1, ease: "power2" });
+
 // select elements to reveal
 const elements = document.querySelectorAll(".revealscroll");
 
@@ -42,7 +44,7 @@ const elements = document.querySelectorAll(".revealscroll");
 elements.forEach((el) => {
   gsap.fromTo(
     el,
-    { opacity: 0, y: 80 },
+    { opacity: 0, y: 60 },
     {
       y: 0,
       opacity: 1,
