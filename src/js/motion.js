@@ -44,7 +44,7 @@ const elements = document.querySelectorAll(".revealscroll");
 elements.forEach((el) => {
   gsap.fromTo(
     el,
-    { opacity: 0, y: 50 },
+    { opacity: 0, y: 20 },
     {
       y: 0,
       opacity: 1,
@@ -52,7 +52,7 @@ elements.forEach((el) => {
       ease: "circ.in",
       scrollTrigger: {
         trigger: el,
-        start: "top 95%",
+        start: "top 80%",
       },
     }
   );
