@@ -31,7 +31,7 @@ gsap.fromTo(
 //showcase motion
 gsap.fromTo(
   ".reveal",
-  { opacity: 0, y: -50 },
+  { opacity: 0, y: 50 },
   { opacity: 1, y: 0, duration: 3, ease: "circ.in" }
 );
 
