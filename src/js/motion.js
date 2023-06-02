@@ -31,11 +31,23 @@ gsap.fromTo(
 //showcase motion
 gsap.fromTo(
   ".reveal",
-  { opacity: 0, y: 50 },
-  { opacity: 1, y: 0, duration: 3, ease: "circ.in" }
+  { opacity: 0 },
+  {
+    opacity: 1,
+    duration: 3,
+    ease: "circ.in",
+    stagger: {
+      ease: "circ.in",
+      amount: 1.5,
+    },
+  }
 );
 
-gsap.fromTo(".scroll-down", { opacity: 0 }, { opacity: 1, ease: "circ.in" });
+gsap.fromTo(
+  ".scroll-down",
+  { opacity: 0 },
+  { opacity: 1, duration: 2, ease: "circ.in" }
+);
 
 // select elements to reveal
 const elements = document.querySelectorAll(".revealscroll");
