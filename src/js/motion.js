@@ -1,15 +1,7 @@
 import { gsap } from "gsap";
-import { ExpoScaleEase, RoughEase, SlowMo } from "gsap/EasePack";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(
-  ScrollTrigger,
-  ScrollToPlugin,
-  ExpoScaleEase,
-  RoughEase,
-  SlowMo
-);
+gsap.registerPlugin(ScrollTrigger);
 
 //header motion
 gsap.fromTo(
@@ -31,15 +23,12 @@ gsap.fromTo(
 //showcase motion
 gsap.fromTo(
   ".reveal",
-  { opacity: 0 },
+  { opacity: 0, y: 20 },
   {
+    y: 0,
     opacity: 1,
     duration: 3,
     ease: "circ.in",
-    stagger: {
-      ease: "circ.in",
-      amount: 1.5,
-    },
   }
 );
 
