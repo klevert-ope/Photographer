@@ -53,7 +53,11 @@ elements.forEach((el) => {
       ease: "circ.in",
       scrollTrigger: {
         trigger: el,
-        start: "top 80%",
+        start: "top 95%",
+        end: "top 70%",
+        scrub: true,
+        fastScrollEnd: true,
+        preventOverlaps: true,
       },
     }
   );
