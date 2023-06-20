@@ -1,7 +1,33 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+// Scroll to target section smoothly
+function scrollToSection(target) {
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: target,
+    ease: "power4.Out",
+  });
+}
+
+// Get the navigation links
+const navLinks = document.querySelectorAll("#navigationtop a");
+
+// Add click event listeners to the navigation links
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault(); // Prevent default anchor link behavior
+
+    const target = link.getAttribute("href"); // Get the target section
+
+    if (target) {
+      scrollToSection(target); // Scroll to the target section
+    }
+  });
+});
 
 //header motion
 gsap.fromTo(
@@ -49,12 +75,12 @@ elements.forEach((el) => {
     {
       y: 0,
       opacity: 1,
-      duration: 1.5,
+      duration: 2,
       ease: "circ.in",
       scrollTrigger: {
         trigger: el,
         start: "top 95%",
-        end: "top 70%",
+        end: "top 60%",
         scrub: true,
         fastScrollEnd: true,
         preventOverlaps: true,
